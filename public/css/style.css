@@ -1,0 +1,8 @@
+.jumbotron{
+	background-image: url(../images/landing-page.jpg);
+	background-size: cover;
+	color: black;
+}
+.btn-secondary {
+	background-color: white !important;
+}

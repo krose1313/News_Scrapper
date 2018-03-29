@@ -1,0 +1,30 @@
+{
+  "name": "news_scrapper",
+  "version": "1.0.0",
+  "description": "news article scrapper that stores data in a mongo db",
+  "main": "index,js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krose1313/News_Scrapper.git"
+  },
+  "author": "katy rose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krose1313/News_Scrapper/issues"
+  },
+  "homepage": "https://github.com/krose1313/News_Scrapper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "moment": "^2.21.0",
+    "mongoose": "^5.0.11",
+    "morgan": "^1.9.0",
+    "request": "^2.85.0"
+  }
+}
