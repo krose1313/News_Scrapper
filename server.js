@@ -50,11 +50,15 @@ app.get("/scrape", function (req, res) {
 
       result.title = $(this).children("div.story-body").children("h2.headline").children("a").text();
 
-      result.link = $(this).children("figure.photo").children("a").children("img").attr("src");
+      result.link = $(this).children("a").attr("href");
 
       result.summary = $(this).children("div.story-body").children("p.summary").text();
 
       result.byline = $(this).children("div.story-body").children("p.byline").children("span.author").text();
+
+      if (result.title.length === 0) return;
+      
+      console.log('result', result);
 
       // Create a new Article using the `result` object built from scraping
       db.Article.create(result)
@@ -69,7 +73,7 @@ app.get("/scrape", function (req, res) {
     });
 
     // If we were able to successfully scrape and save an Article, 
-     res.redirect("/");
+     // res.JSON(result);
   });
 });
 
