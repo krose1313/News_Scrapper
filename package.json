@@ -1,10 +1,10 @@
 {
-  "name": "news_scrapper",
+  "name": "news-scrapper",
   "version": "1.0.0",
-  "description": "news article scrapper that stores data in a mongo db",
-  "main": "index.js",
+  "description": "new york times news scrapper app",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,8 @@
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "moment": "^2.21.0",
-    "mongoose": "^5.0.11",
+    "moment": "^2.22.0",
+    "mongoose": "^5.0.13",
     "morgan": "^1.9.0",
     "request": "^2.85.0"
   }
