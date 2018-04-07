@@ -2,7 +2,7 @@
   "name": "news_scrapper",
   "version": "1.0.0",
   "description": "news article scrapper that stores data in a mongo db",
-  "main": "index,js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
