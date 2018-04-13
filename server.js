@@ -74,7 +74,7 @@ app.get("/scrape", function (req, res) {
     });
 
     // If we were able to successfully scrape and save an Article, 
-    res.redirect("/");
+    res.redirect("https://nyt-news-scrapper.herokuapp.com/");
   });
 });
 
