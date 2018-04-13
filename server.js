@@ -50,7 +50,7 @@ app.get("/scrape", function (req, res) {
 
       result.title = $(this).children("div.story-body").children("h2.headline").children("a").text();
 
-      result.link = $(this).children("a").attr("href");
+      result.link = $(this).children("figure.photo").children("a").children("img").attr("src");
 
       result.summary = $(this).children("div.story-body").children("p.summary").text();
 
@@ -74,7 +74,7 @@ app.get("/scrape", function (req, res) {
     });
 
     // If we were able to successfully scrape and save an Article, 
-     // res.JSON(result);
+    res.redirect("/");
   });
 });
 
